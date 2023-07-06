@@ -1,0 +1,284 @@
+/* Reset default margin and padding */
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and font styles */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Grid container */
+.container {
+    display: grid;
+    grid-template-columns: 100% 1fr; /* Adjust the width of the navbar column as needed */
+    grid-gap: 20px; /* Add some spacing between columns */
+}
+
+/* Navigation styles */
+nav {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: #1e1919;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #363839;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #0285c6;
+    padding: 5px 10px;
+}
+
+/* Logo image */
+nav .logo img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Content styles */
+.content {
+    /* background-color: bisque; */
+    padding: 20px;
+    margin-left: 200px; /* Adjust the margin to account for the width of the navbar column */
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-gap: 20px; /* Add some spacing between columns */
+    /* background-color: #0285c6; */
+}
+
+.header img {
+    width: 90%;
+    height: 90%;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    text-align: center;
+}
+
+.header-text a {
+    padding: 10px 10px;
+    text-decoration: none;
+    background-color: deepskyblue;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* Add styles for the grid wrapper and service elements */
+.services {
+    padding: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+}
+
+.service a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: deepskyblue;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service a:hover {
+    background-color: rgb(144, 214, 237);
+}
+
+.service img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+/* Place form and image in separate grid wrapper */
+.form-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+  /* Styles for form wrapper */
+.form-wrapper {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.form-wrapper h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-wrapper p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.form-wrapper label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-wrapper input[type="text"],
+.form-wrapper input[type="email"],
+.form-wrapper textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.form-wrapper input[type="submit"],
+.form-wrapper button {
+    padding: 10px 20px;
+    background-color: deepskyblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+  /* Styles for image container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.hours-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hours-list li {
+    margin-bottom: 10px;
+}
+
+.hours-list li span {
+    font-weight: bold;
+    margin-right: 5px;
+    display: inline-block;
+    width: 100px;
+}
+
+/* Footer styles */
+footer {
+    grid-column: 1 / -1; /* Span across all columns */
+    text-align: center;
+    padding: 10px;
+    color: #454343;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px; /* Adjust the font size for smaller screens */
+    }
+
+    .container {
+        grid-template-columns: 100%; /* Set a single column for mobile screens */
+        margin-left: 0; /* Remove the left margin */
+    }
+
+    .grid-wrapper {
+        grid-template-columns: 1fr; /* Set a single column for mobile screens */
+    }
+
+    nav {
+        position: static; /* Remove the fixed positioning */
+        height: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+        margin-right: 10px; /* Add some spacing between list items */
+    }
+
+    .content {
+        margin-left: 0; /* Remove the left margin */
+    }
+
+    .header {
+        grid-template-columns: 1fr; /* Single column for mobile screens */
+    }
+    
+    .header-image,
+    .header-text {
+        text-align: center; /* Center both elements in the header vertically */
+    }
+
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        width: 100%; /* Set the input fields to occupy the full width */
+    }
+    
+    form input[type="submit"],
+    form button {
+        margin-left: 0; /* Remove the left margin */
+    }
+}
