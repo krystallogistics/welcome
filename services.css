@@ -1,0 +1,186 @@
+/* Reset default margin and padding */
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and font styles */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation styles */
+nav {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: #1e1919;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #363839;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #0285c6;
+    padding: 5px 10px;
+}
+
+/* Logo image */
+nav .logo img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.main-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-left: 20%;
+    padding-right: 7%;
+    margin-left: auto;
+    text-align: center;
+}
+
+.main-services img {
+    max-width: 350px;
+    height: auto;
+}
+
+.main-services a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: deepskyblue;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    width: 80%;
+    align-self: center;
+}
+
+.service-wrapper img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.service-wrapper p {
+    text-align: center;
+}
+
+.service-wrapper a {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.service-wrapper a:hover {  
+    background-color: rgb(144, 214, 237);
+}
+
+.grocery {
+    display: grid;
+    grid-column: 1 / span 2;
+}
+
+.food {
+    display: grid;
+    grid-column: 1 / span 2;
+}
+
+.station {
+    display: grid;
+    grid-column: 1/ span 2;
+}
+
+.general {
+    display: grid;
+    grid-column: 1 / span 2;
+}
+
+/* Footer styles */
+footer {
+    grid-column: 1 / -1; /* Span across all columns */
+    text-align: center;
+    padding: 10px;
+    color: #454343;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px; /* Adjust the font size for smaller screens */
+    }
+
+    nav {
+        position: static; /* Remove the fixed positioning */
+        height: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+        margin-right: 10px; /* Add some spacing between list items */
+    }
+
+    .main-services {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .service-wrapper {
+        grid-template-columns: 1fr; /* Set a single column formobile screens */
+        width: 100%;
+        padding: 10px;
+    }
+
+    .service-wrapper a {
+        width: auto;
+        padding-bottom: 2%;
+    }
+
+    .grocery,
+    .food,
+    .station,
+    .general {
+        grid-column: auto; /* Remove the column span for mobile screens */
+    }
+}
+

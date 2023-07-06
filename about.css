@@ -1,0 +1,213 @@
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Adjusted to 'auto' for the first column */
+  grid-gap: 20px; /* Add some spacing between columns */
+
+}
+
+/* Navigation styles */
+nav {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: #1e1919;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #363839;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #0285c6;
+  padding: 5px 10px;
+}
+
+/* Logo image */
+nav .logo img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-left: 20%;
+  padding-right: 7%;
+  grid-row: 1; /* Place in the first row */
+  grid-column: 2; /* Place in the second column */
+  margin-left: auto;
+  text-align: center;
+}
+
+.main-content h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.main-content img {
+  width: 75%;
+}
+
+.details {
+  display: grid; /* Use grid display for sub-grid */
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 1px; /* Gap between columns and rows */
+  justify-items: center; /* Center items horizontally in columns */
+  align-items: center; /* Center items vertically in rows */
+  padding: 20px;
+  grid-column: 1 / -1; /* Span across all columns */
+}
+
+.details-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 3%;
+}
+
+.details-item img {
+  max-width: 75%;
+  height: auto;
+  margin-left: 30%;
+}
+
+.details-item a {
+  text-decoration: none;
+  background-color: deepskyblue;
+  color: #090909;
+  padding: 10px 20px;
+  margin-top: 1%;
+  margin-left: 30%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.details-item a:hover {
+  text-decoration: none;
+  background-color: rgb(61, 207, 255);
+  color: #161717;
+}
+
+
+footer {
+  grid-column: 1 / -1; /* Span across all columns */
+  text-align: center;
+  padding: 10px;
+  color: #454343;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  body {
+    font-size: 12px; /* Adjust the font size for smaller screens */
+  }
+
+  .container {
+    grid-template-columns: 100%; /* Change to a single column layout */
+    grid-gap: 10px; /* Reduce the gap between columns */
+  }
+
+  nav {
+    position: static; /* Remove the fixed positioning */
+    height: auto;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  nav ul li {
+    margin-bottom: 0;
+    margin-right: 10px; /* Add some spacing between list items */
+  }
+
+  .logo {
+    display: block; /* Hide the logo in the mobile view */
+  }
+
+  .main-content {
+    margin-left: auto; /* Remove the auto margin */
+    grid-row: auto; /* Reset grid row */
+    grid-column: auto; /* Reset grid column */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .main-content h1 {
+    font-size: 20px; /* Adjust the heading font size for smaller screens */
+  }
+
+  .main-content img {
+    width: 100%; /* Make the image width 100% of the container */
+  }
+
+  .details {
+    bottom: 100%;
+    padding: 10px; /* Adjust padding */
+    margin: 0 auto;
+  }
+
+  .details-item {
+    margin-left: 0; /* Reset margin */
+    margin-bottom: 10px; /* Add spacing between items */
+  }
+
+  .details-item img {
+    margin-left: auto;
+    margin-right: auto; /* Center the image horizontally */
+  }
+
+  .details-item a {
+    margin-left: auto;
+    margin-right: auto; /* Center the link horizontally */
+    width: 50%;
+    padding: 2%;
+    margin: 0 auto;
+    margin-top: 2px;
+    text-align: center;
+  }
+}
