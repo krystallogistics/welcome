@@ -223,7 +223,7 @@ footer {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     body {
-        font-size: 14px; /* Adjust the font size for smaller screens */
+        font-size: 12px; /* Adjust the font size for smaller screens */
     }
 
     .container {
