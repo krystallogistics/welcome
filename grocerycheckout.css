@@ -1,0 +1,150 @@
+/* Reset default margin and padding */
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and font styles */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation styles */
+nav {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: #1e1919;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #363839;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #0285c6;
+    padding: 5px 10px;
+}
+
+/* Logo image */
+nav .logo img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-left: 20%;
+    padding-right: 7%;
+    margin-left: auto;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.form-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Set the width to 100% */
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.form-details label {
+    display: block;
+    margin-bottom: 10px; /* Add some spacing between labels */
+    text-align: left;
+    width: 100%; /* Set the width to 100% */
+    font-weight: 600; /* Make labels more prominent */
+}
+
+.form-details input,
+.form-details textarea {
+    width: 100%; /* Set the width to 100% */
+    padding: 10px;
+    margin-bottom: 10px; /* Adjust the margin-bottom as needed */
+    border: 1px solid #ddd; /* Add a border for input fields */
+    border-radius: 4px; /* Round the corners of input fields */
+}
+
+.form-details .dropdown-group {
+    display: flex; /* Display the radio inputs in a flex container */
+    justify-content: space-between; /* Distribute the items horizontally with space between them */
+    margin-bottom: 10px; /* Adjust the margin-bottom as needed */
+}
+
+input[type="submit"] {
+    width: auto; /* Reset the width for the submit button */
+    padding: 10px 20px; /* Add some padding to the submit button */
+    background-color: #0285c6; /* Set a background color for the submit button */
+    color: #fff; /* Set the text color for the submit button */
+    border: none; /* Remove the border for the submit button */
+    border-radius: 4px; /* Round the corners of the submit button */
+    cursor: pointer; /* Add a cursor pointer for better interactivity */
+    font-weight: bold; /* Make the submit button more prominent */
+    margin: 0 auto;
+}
+
+footer {
+    grid-column: 1 / -1; /* Span across all columns */
+    text-align: center;
+    padding: 10px;
+    color: #454343;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px; /* Adjust the font size for smaller screens */
+    }
+
+    nav {
+        position: static; /* Remove the fixed positioning */
+        height: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+        margin-right: 10px; /* Add some spacing between list items */
+    }
+
+    .container {
+        padding-left: 10%;
+        padding-right: 15%;
+        margin: 0 auto;
+    }
+}

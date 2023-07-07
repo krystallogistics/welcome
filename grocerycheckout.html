@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Whitewings Food Delivery - Checkout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="./grocerycheckout.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <div class="logo">
+                <img src="./assets/kllogo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <h1>GROCERY SHOPPING & DELIVERY CHECKOUT</h1>
+
+        <div class="form-details">
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" required> 
+
+            <div class="dropdown-group">
+                <label for="campus">Select Campus:</label>
+                <div class="dropdown">
+                    <select id="campus" name="campus">
+                        <<option value=""></option>
+                        <option value="nyankpala">Nyankpala Campus</option>
+                        <option value="dungu">Dungu Campus</option>
+                        <option value="city-campus">City Campus</option>
+                    </select>
+                </div>
+            </div>
+            
+            <label for="location">Hostel Location*</label>
+            <input type="text" id="location" name="location" required>
+            
+            <label for="items">Items Needed (quantities and prices)*</label>
+            <textarea id="items" name="items" rows="5" required></textarea>
+
+            <input type="submit" value="PLACE ORDER"><br>     
+        </div>
+        
+        <div class="payment-process">
+            <h2>PAYMENT PROCESS</h2>
+            <p>
+                Pay for your groceries and service below. <br>
+                You can Pay via MTN MOMO or Vodafone Cash. <br>
+                <em>MTN Momo: 053-172-8911</em> <br>
+                <em>Vodafone Cash: 020-390-1038</em>
+            </p>
+            <p id="price"></p>
+        </div>
+        
+        <footer>
+            <p>COPYRIGHT © 2023 KRYSTAL LOGISTICS - ALL RIGHTS RESERVED.</p>
+        </footer>
+    </div>
+    <script src="/checkoutscript.js"></script>
+</body>
+</html>
