@@ -22,7 +22,7 @@
             </ul>
         </nav>
 
-        <h1>GROCERY SHOPPING & DELIVERY CHECKOUT</h1>
+        <h1>GAS CYLINDER REFILS CHECKOUT</h1>
 
         <div class="form-details">
             <label for="name">Name*</label>
@@ -49,8 +49,17 @@
             <label for="location">Hostel Location*</label>
             <input type="text" id="location" name="location" required>
             
-            <label for="items">Items Needed (quantities and prices)*</label>
-            <textarea id="items" name="items" rows="5" required></textarea>
+            <div class="cylinder-group">
+                <label for="cylinder">Select Cylinder Size:</label>
+                <div class="dropdown">
+                    <select id="cylinder-sizes" name="cylinder-sizes">
+                        <<option value=""></option>
+                        <option value="big">Big Size</option>
+                        <option value="mid">Medium Size</option>
+                        <option value="small">Small Size</option>
+                    </select>
+                </div>
+            </div>
 
             <input type="submit" value="PLACE ORDER"><br>     
         </div>
@@ -71,6 +80,6 @@
             <p>COPYRIGHT © 2023 KRYSTAL LOGISTICS - ALL RIGHTS RESERVED.</p>
         </footer>
     </div>
-    <script src="./scripts/checkoutscript.js"></script>
+    <script src="./scripts/gasscript.js"></script>
 </body>
 </html>

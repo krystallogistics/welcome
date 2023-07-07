@@ -100,6 +100,12 @@ nav .logo img {
     margin-bottom: 10px; /* Adjust the margin-bottom as needed */
 }
 
+.form-details .cylinder-group {
+    display: flex; /* Display the radio inputs in a flex container */
+    justify-content: space-between; /* Distribute the items horizontally with space between them */
+    margin-bottom: 10px; /* Adjust the margin-bottom as needed */
+}
+
 input[type="submit"] {
     width: auto; /* Reset the width for the submit button */
     padding: 10px 20px; /* Add some padding to the submit button */
