@@ -141,7 +141,7 @@ footer {
 /* Media Queries */
 @media (max-width: 768px) {
   body {
-    font-size: 12px; /* Adjust the font size for smaller screens */
+    font-size: 14px; /* Adjust the font size for smaller screens */
   }
 
   .container {

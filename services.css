@@ -140,7 +140,7 @@ footer {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     body {
-        font-size: 12px; /* Adjust the font size for smaller screens */
+        font-size: 14x; /* Adjust the font size for smaller screens */
     }
 
     nav {
