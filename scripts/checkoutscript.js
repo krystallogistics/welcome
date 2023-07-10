@@ -15,7 +15,7 @@
             price = 7;
         }
         // Display the price on the website
-        priceDisplay.textContent = `Your bill is: Ghc${price} `;
+        priceDisplay.textContent = `Service Charge: Ghc${price} `;
     }
 
     // Add event listener to the campus select element
