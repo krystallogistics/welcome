@@ -10,7 +10,7 @@ dropdownBtn.addEventListener('click', toggleDropdown);
 
 function openWhatsApp() {
   let phoneNumber = "0531728911";
-  let message = "Hello, how can I help you?";
+  let message = "Hello, I want to Order ";
 
   let url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
 
