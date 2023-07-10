@@ -109,6 +109,13 @@ nav .logo img {
     background-color: rgb(144, 214, 237);
 }
 
+#cyl-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
 .grocery {
     display: grid;
     grid-column: 1 / span 2;
@@ -121,7 +128,7 @@ nav .logo img {
 
 .station {
     display: grid;
-    grid-column: 1/ span 2;
+    grid-column: 1 / span 2;
 }
 
 .general {
