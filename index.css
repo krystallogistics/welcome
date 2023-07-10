@@ -175,6 +175,10 @@ nav .logo img {
     cursor: pointer;
 }
 
+#wa {
+    color: rgb(3, 117, 47);
+}
+
   /* Styles for image container */
 .image-container {
     display: flex;
@@ -281,5 +285,6 @@ footer {
     form input[type="submit"],
     form button {
         margin-left: 0; /* Remove the left margin */
+        margin: 1px;
     }
 }
