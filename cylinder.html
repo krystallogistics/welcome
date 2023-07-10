@@ -25,43 +25,45 @@
         <h1>GAS CYLINDER REFILS CHECKOUT</h1>
 
         <div class="form-details">
-            <label for="name">Name*</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email*</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Phone Number*</label>
-            <input type="tel" id="phone" name="phone" required> 
-
-            <div class="dropdown-group">
-                <label for="campus">Select Campus:</label>
-                <div class="dropdown">
-                    <select id="campus" name="campus">
-                        <<option value=""></option>
-                        <option value="nyankpala">Nyankpala Campus</option>
-                        <option value="dungu">Dungu Campus</option>
-                        <option value="city-campus">City Campus</option>
-                    </select>
+            <form action="https://formspree.io/f/xleyelde" method="POST">
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" required> 
+    
+                <div class="dropdown-group">
+                    <label for="campus">Select Campus:</label>
+                    <div class="dropdown">
+                        <select id="campus" name="campus">
+                            <<option value=""></option>
+                            <option value="nyankpala">Nyankpala Campus</option>
+                            <option value="dungu">Dungu Campus</option>
+                            <option value="city-campus">City Campus</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            
-            <label for="location">Hostel Location*</label>
-            <input type="text" id="location" name="location" required>
-            
-            <div class="cylinder-group">
-                <label for="cylinder">Select Cylinder Size:</label>
-                <div class="dropdown">
-                    <select id="cylinder-sizes" name="cylinder-sizes">
-                        <<option value=""></option>
-                        <option value="big">Big Size</option>
-                        <option value="mid">Medium Size</option>
-                        <option value="small">Small Size</option>
-                    </select>
+                
+                <label for="location">Hostel Location*</label>
+                <input type="text" id="location" name="location" required>
+                
+                <div class="cylinder-group">
+                    <label for="cylinder">Select Cylinder Size:</label>
+                    <div class="dropdown">
+                        <select id="cylinder-sizes" name="cylinder-sizes">
+                            <<option value=""></option>
+                            <option value="big">Big Size</option>
+                            <option value="mid">Medium Size</option>
+                            <option value="small">Small Size</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-
-            <input type="submit" value="PLACE ORDER"><br>     
+    
+                <input type="submit" value="PLACE ORDER"><br>
+            </form>     
         </div>
 
         <p id="price"></p>

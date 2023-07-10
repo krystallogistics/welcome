@@ -25,34 +25,36 @@
         <h1>CLOTHING & FASHION ITEMS CHECKOUT</h1>
 
         <div class="form-details">
-            <label for="name">Name*</label>
-            <input type="text" id="name" name="name" required>
+            <form form action="https://formspree.io/f/xleyelde" method="POST">
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Email*</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="phone">Phone Number*</label>
-            <input type="tel" id="phone" name="phone" required> 
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" required> 
 
-            <div class="dropdown-group">
-                <label for="campus">Select Campus:</label>
-                <div class="dropdown">
-                    <select id="campus" name="campus">
-                        <<option value=""></option>
-                        <option value="nyankpala">Nyankpala Campus</option>
-                        <option value="dungu">Dungu Campus</option>
-                        <option value="city-campus">City Campus</option>
-                    </select>
+                <div class="dropdown-group">
+                    <label for="campus">Select Campus:</label>
+                    <div class="dropdown">
+                        <select id="campus" name="campus">
+                            <<option value=""></option>
+                            <option value="nyankpala">Nyankpala Campus</option>
+                            <option value="dungu">Dungu Campus</option>
+                            <option value="city-campus">City Campus</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            
-            <label for="location">Hostel Location*</label>
-            <input type="text" id="location" name="location" required>
-            
-            <label for="items">Items Needed (quantities and prices)*</label>
-            <textarea id="items" name="items" rows="5" required></textarea>
+                
+                <label for="location">Hostel Location*</label>
+                <input type="text" id="location" name="location" required>
+                
+                <label for="items">Items Needed (quantities and prices)*</label>
+                <textarea id="items" name="items" rows="5" required></textarea>
 
-            <input type="submit" value="PLACE ORDER"><br>     
+                <input type="submit" value="PLACE ORDER"><br>
+            </form>
         </div>
 
         <p id="price"></p>
