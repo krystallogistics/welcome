@@ -45,7 +45,7 @@
         // const totalPrice = campusPrice + cylinderPrice;
 
         // Display the total price on the website
-        priceDisplay.textContent = `Total Price: ${totalPrice} cedis`;
+        priceDisplay.textContent = `Service Charge: ${totalPrice} cedis`;
     }
 
     // Add event listeners to the select elements
