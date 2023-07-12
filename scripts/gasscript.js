@@ -32,6 +32,15 @@
         else if (campusValue === 'city-campus' && cylinderValue === 'small') {
             totalPrice = 10;
         }
+        else if (campusValue === 'tatu' && cylinderValue === 'big') {
+            totalPrice = 20;
+        }
+        else if (campusValue === 'tatu' && cylinderValue === 'mid') {
+            totalPrice = 15;
+        }
+        else if (campusValue === 'tatu' && cylinderValue === 'small') {
+            totalPrice = 10;
+        }
 
         // if (cylinderValue === 'big') {
         //     cylinderPrice = 20;

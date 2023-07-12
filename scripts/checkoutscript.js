@@ -13,9 +13,11 @@
             price = 10;
         } else if (campusValue === 'city-campus') {
             price = 7;
+        } else if (campusValue === 'tatu') {
+            price = 7;
         }
         // Display the price on the website
-        priceDisplay.textContent = `Service Charge: Ghc${price} `;
+        priceDisplay.textContent = `Service Charge: Ghc ${price} `;
     }
 
     // Add event listener to the campus select element
