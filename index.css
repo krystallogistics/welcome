@@ -224,6 +224,16 @@ footer {
     color: #454343;
 }
 
+footer a {
+    padding: 5px 5px;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     body {
@@ -286,5 +296,9 @@ footer {
     form button {
         margin-left: 0; /* Remove the left margin */
         margin: 1px;
+    }
+    
+    footer a {
+        font-size: 10px;
     }
 }

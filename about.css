@@ -138,6 +138,17 @@ footer {
   color: #454343;
 }
 
+footer a {
+  padding: 5px 5px;
+  text-decoration: none;
+  background-color: none;
+  color: #000000;
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   body {
@@ -210,4 +221,8 @@ footer {
     margin-top: 2px;
     text-align: center;
   }
+
+  footer a {
+    font-size: 10px; 
+}
 }
